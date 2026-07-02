@@ -1,0 +1,15 @@
+Pour afficher ta photo dans la section « L'avocat et son réseau » :
+
+1. Dépose ton image dans CE dossier (public/), par exemple :
+      public/alexandre-lazaregue.jpg
+   (formats acceptés : .jpg, .png, .webp — idéalement carrée, ex. 400x400 px)
+
+2. Ouvre le fichier  lib/site.ts  et remplace la ligne :
+      lawyerPhoto: "",
+   par :
+      lawyerPhoto: "/alexandre-lazaregue.jpg",
+
+3. Enregistre. La photo remplace automatiquement les initiales « AL ».
+
+Les deux autres cartes (Experts HSE & Formateurs) représentent ton réseau :
+elles gardent volontairement une icône, pas besoin de photo.
