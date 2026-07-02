@@ -5,6 +5,9 @@ import { guides, getGuide } from "@/lib/guides";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { Arrow } from "@/components/ui";
+import PillarCanicule from "@/components/PillarCanicule";
+
+const PILLAR_SLUG = "canicule-au-travail-obligations-employeur";
 
 export function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
@@ -24,6 +27,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function GuidePage({ params }: { params: { slug: string } }) {
   const g = getGuide(params.slug);
   if (!g) notFound();
+
+  // La page pilier dispose d'une mise en page premium dédiée.
+  if (g.slug === PILLAR_SLUG) return <PillarCanicule />;
 
   const related = g.related.map((s) => getGuide(s)).filter(Boolean);
 

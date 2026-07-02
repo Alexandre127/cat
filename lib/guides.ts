@@ -66,11 +66,11 @@ export const guides: Guide[] = [
   },
   {
     slug: "canicule-au-travail-obligations-employeur",
-    keyword: "canicule travail",
-    h1: "Canicule au travail : les obligations de l'employeur en 2026",
-    metaTitle: "Canicule au travail : obligations de l'employeur (2026)",
+    keyword: "obligations employeur canicule",
+    h1: "Obligations de l'employeur en cas de canicule : le guide complet 2026",
+    metaTitle: "Obligations de l'employeur en cas de canicule : le guide 2026",
     metaDescription:
-      "Évaluation des risques, DUERP, eau, horaires, formation, salariés vulnérables : le guide complet des obligations de l'employeur en cas de canicule depuis le décret 2025-482.",
+      "Plan canicule, DUERP, mesures, responsabilité, faute inexcusable et droit de retrait : le guide complet 2026 des obligations de l'employeur en cas de fortes chaleurs.",
     intro:
       "Depuis le décret n°2025-482 du 27 mai 2025, l'employeur a des obligations précises en cas d'épisode de fortes chaleurs. Voici, secteur par secteur, ce qui est attendu — et ce qui est sanctionné lorsque rien n'a été fait.",
     sections: [
