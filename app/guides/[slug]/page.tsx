@@ -6,8 +6,10 @@ import { site } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { Arrow } from "@/components/ui";
 import PillarCanicule from "@/components/PillarCanicule";
+import PlanCanicule from "@/components/PlanCanicule";
 
 const PILLAR_SLUG = "canicule-au-travail-obligations-employeur";
+const PLAN_SLUG = "plan-canicule-entreprise";
 
 export function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
@@ -28,8 +30,9 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
   const g = getGuide(params.slug);
   if (!g) notFound();
 
-  // La page pilier dispose d'une mise en page premium dédiée.
+  // Certaines pages disposent d'une mise en page premium dédiée.
   if (g.slug === PILLAR_SLUG) return <PillarCanicule />;
+  if (g.slug === PLAN_SLUG) return <PlanCanicule />;
 
   const related = g.related.map((s) => getGuide(s)).filter(Boolean);
 

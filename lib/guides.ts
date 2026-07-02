@@ -207,11 +207,11 @@ export const guides: Guide[] = [
   },
   {
     slug: "plan-canicule-entreprise",
-    keyword: "plan chaleur entreprise",
-    h1: "Plan canicule en entreprise : modèle et procédure",
-    metaTitle: "Plan canicule entreprise : modèle et procédure 2026",
+    keyword: "plan canicule entreprise",
+    h1: "Comment construire un plan canicule d'entreprise conforme au Code du travail",
+    metaTitle: "Plan canicule entreprise : modèle et méthode pas à pas 2026",
     metaDescription:
-      "Comment construire un plan canicule : responsable, vigilance Météo-France, mesures par niveau, alerte et secours. Structure type pour être prêt avant l'été.",
+      "Comment construire un plan canicule d'entreprise : méthode pas à pas, 10 rubriques, tableaux modèles à copier, exemple complet et FAQ. Conforme au Code du travail 2026.",
     intro:
       "Un plan canicule transforme vos obligations en procédure concrète : qui surveille, qui décide, quelles mesures à quel niveau de vigilance. Voici la structure type.",
     sections: [

@@ -647,3 +647,78 @@ footer.site .foot-nav a{margin:0;font-size:14px}
 .ck-final .cta:hover{background:#f0efe9}
 .ck-final-meta{margin-top:16px;font-size:13.5px;color:#8b8e99}
 .ck-final-meta a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+
+/* ═══════════════════════════════════════════════════════════════
+   GUIDE PRATIQUE — Plan canicule (How-To)
+   Réutilise les composants .pil-* ; ajouts spécifiques ci-dessous.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* meta chips du hero */
+.plan-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.plan-chip{font-size:13px;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--line);padding:9px 14px;border-radius:10px}
+.plan-chip b{color:var(--ink);font-weight:600}
+
+/* cartes rubriques */
+.plan-rubriques{display:flex;flex-direction:column;gap:16px;margin:24px 0}
+.plan-rubrique{background:var(--paper-2);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.plan-rubrique-head{display:flex;align-items:flex-start;gap:14px}
+.plan-rubrique-head .num{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:var(--cool);color:#fff;font-family:'Bricolage Grotesque';font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center}
+.plan-rubrique-head h3{font-size:18.5px;line-height:1.2}
+.plan-rubrique-head .ref{display:inline-block;margin-top:5px;font-size:10.5px;color:var(--orange)}
+.plan-rubrique .obj{font-size:15.5px;color:var(--ink);margin-top:14px}
+.plan-rubrique .why{font-size:15px;color:var(--ink-soft);margin-top:8px;line-height:1.6}
+.plan-rubrique .prevoir{margin-top:14px;background:var(--cool-tint);border-radius:10px;padding:14px 16px}
+.plan-rubrique .prevoir .dl,.plan-rubrique .err .dl,.plan-rubrique .ex .dl{display:block;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.plan-rubrique .prevoir .dl{color:var(--cool)}
+.plan-rubrique .prevoir ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.plan-rubrique .prevoir li{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:var(--ink-soft);line-height:1.45}
+.plan-rubrique .prevoir li svg{flex-shrink:0;margin-top:3px}
+.plan-rubrique-foot{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.plan-rubrique .err,.plan-rubrique .ex{border-radius:10px;padding:13px 15px}
+.plan-rubrique .err{background:#fdeee9;border:1px solid #f6d4cc}
+.plan-rubrique .err .dl{color:var(--rouge)}
+.plan-rubrique .ex{background:var(--paper);border:1px solid var(--line)}
+.plan-rubrique .ex .dl{color:var(--ink-faint)}
+.plan-rubrique .err p,.plan-rubrique .ex p{margin:0;font-size:14px;color:var(--ink-soft);line-height:1.5}
+.plan-rubrique .ex p{font-style:italic}
+@media(max-width:600px){.plan-rubrique-foot{grid-template-columns:1fr}}
+
+/* tableaux modèles à copier */
+.plan-model{margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:var(--paper-2)}
+.plan-model-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;background:var(--paper);border-bottom:1px solid var(--line)}
+.plan-model-head .cap{font-size:11px;color:var(--orange)}
+.plan-copy{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--cool);background:var(--cool-tint);border:1px solid #cfe0dd;padding:7px 12px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:.15s}
+.plan-copy:hover{background:#d7e8e5}
+
+/* document exemple */
+.plan-doc{margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(28,29,36,.10)}
+.plan-doc-bar{display:flex;align-items:center;gap:7px;padding:11px 15px;background:#f0ede6;border-bottom:1px solid var(--line)}
+.plan-doc-bar .dot{width:10px;height:10px;border-radius:50%;background:#cfcabf}
+.plan-doc-bar .fname{margin-left:10px;font-size:12.5px;color:var(--ink-faint);font-family:'IBM Plex Mono'}
+.plan-doc-body{padding:26px 28px;background:var(--paper-2)}
+.plan-doc-cover{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}
+.plan-doc-cover .mono{font-size:11px;color:var(--orange)}
+.plan-doc-cover h4{font-family:'Bricolage Grotesque';font-weight:700;font-size:21px;margin:8px 0 10px;letter-spacing:-.01em;max-width:560px}
+.plan-doc-cover p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.55}
+.plan-doc-toc{margin:0 0 8px;padding-left:20px;columns:2;column-gap:28px}
+.plan-doc-toc li{font-size:14px;color:var(--ink-soft);margin-bottom:7px;break-inside:avoid}
+.plan-doc-note{font-size:10.5px;color:var(--ink-faint);margin-top:16px}
+@media(max-width:560px){.plan-doc-toc{columns:1}.plan-doc-body{padding:20px}}
+
+/* bloc téléchargement */
+.plan-download{margin:22px 0;background:linear-gradient(135deg,var(--cool),var(--cool-dark));color:#fff;border-radius:18px;padding:28px;box-shadow:0 14px 40px rgba(14,91,84,.24)}
+.plan-download-top .mono{font-size:11px;color:#bfe0da}
+.plan-download-top h3{font-family:'Bricolage Grotesque';font-weight:800;font-size:23px;margin:8px 0 8px}
+.plan-download-top p{font-size:15px;color:#dcebe8;margin:0;max-width:560px;line-height:1.55}
+.plan-formats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.plan-format{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:14px 16px;position:relative}
+.plan-format .ic{font-size:22px}
+.plan-format b{display:block;font-size:14.5px;font-weight:600}
+.plan-format span{font-size:12.5px;color:#bfe0da}
+.plan-format .soon{position:absolute;top:10px;right:12px;font-size:10px;font-weight:600;background:var(--jaune);color:#3a2c00;padding:2px 8px;border-radius:999px}
+.plan-download-cta{border-top:1px solid rgba(255,255,255,.16);padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.plan-download-cta p{font-size:14.5px;color:#eaf5f2;margin:0;max-width:420px;line-height:1.45}
+.plan-download-cta strong{color:#fff}
+.plan-download-cta .pil-inline-btn{background:#fff;color:var(--cool-dark)}
+.plan-download-cta .pil-inline-btn:hover{background:#f0efe9}
+@media(max-width:640px){.plan-formats{grid-template-columns:1fr}}
