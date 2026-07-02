@@ -13,6 +13,9 @@ export function Header() {
           <Link href="/guides" className="lnk">
             Guides
           </Link>
+          <Link href="/outils" className="lnk">
+            Outils
+          </Link>
           <Link href="/#offre" className="lnk">
             Offre
           </Link>

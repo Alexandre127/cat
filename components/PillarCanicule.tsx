@@ -958,6 +958,13 @@ export default function PillarCanicule() {
               Avant le prochain épisode de fortes chaleurs, vérifiez les points suivants. Cochez ce qui
               est déjà en place — le résultat est souvent révélateur.
             </p>
+            <Callout type="conseil" title="Vérifier rapidement votre conformité">
+              Vous voulez une réponse immédiate «&nbsp;conforme ou non&nbsp;»&nbsp;?{" "}
+              <Link href="/outils/checklist-conformite-canicule" className="pil-link">
+                Faites notre check-list de conformité canicule
+              </Link>{" "}
+              : un audit interactif en 10 points, avec score en direct.
+            </Callout>
             <div className="pil-checklist rv">
               <div className="pil-checklist-bar">
                 <span className="mono">{checkedCount} / {CHECKLIST.length} vérifiés</span>
